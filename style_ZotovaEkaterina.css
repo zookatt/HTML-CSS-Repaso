@@ -1,6 +1,21 @@
 /*
 gris: #4e4e4e;
 lila: #503c53;
-lila_claro: af87b5
+lila_claro: #af87b5
 rosa: #c49a8f;
 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --color-gris: #4e4e4e;
+  --color-lila: #503c53;
+  --color-lila-claro: #af87b5;
+  --color-rosa: #c49a8f;
+}
