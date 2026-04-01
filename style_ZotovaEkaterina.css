@@ -3,6 +3,7 @@ gris: #4e4e4e;
 lila: #503c53;
 lila_claro: #af87b5
 rosa: #c49a8f;
+
 */
 *,
 *::before,
@@ -16,6 +17,194 @@ rosa: #c49a8f;
   /* Colors */
   --color-gris: #4e4e4e;
   --color-lila: #503c53;
+  --color-blanco: #fefefe;
   --color-lila-claro: #af87b5;
   --color-rosa: #c49a8f;
+}
+
+/* HEADER */
+#logo {
+  width: 80px;
+}
+header {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  background-color: var(--color-lila);
+  padding: 12px;
+}
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+.nav-links li {
+  list-style: none;
+  padding: 8px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: var(--color-blanco);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  background-color: var(--color-rosa);
+  border-radius: 10px;
+}
+/* BANNER */
+#banner {
+  background-image: url("./imagenes/paisaje.jpg");
+  background-size: cover;
+  background-position: start;
+  background-repeat: no-repeat;
+
+  min-height: 700px; /* o 100vh si lo quieres a pantalla completa */
+  padding: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* centra verticalmente */
+  align-items: flex-end;
+  gap: 16px;
+  padding: 80px;
+  color: var(--color-blanco);
+}
+
+#banner h1,
+#banner p,
+#banner button {
+  width: 550px;
+
+  align-items: start;
+}
+
+#banner h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  text-align: left;
+  margin-top: 50px;
+}
+
+#banner p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+#banner button {
+  border: none;
+  background-color: var(--color-rosa);
+  color: var(--color-blanco);
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+#banner button:hover {
+  background-color: var(--color-gris);
+}
+/* NOSOTROS */
+#sobre-nosotros {
+  background-color: var(--color-rosa);
+  padding: 40px 40px;
+}
+
+h2 {
+  color: var(--color-blanco);
+
+  font-size: 2.3rem;
+}
+
+#nosotros {
+  width: 300px;
+  height: auto;
+}
+
+.nosotros-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.nosotros-container p {
+  padding: 5px 0;
+}
+
+.foto-nosotros {
+  float: left;
+  width: 300px;
+  margin: 0 20px 20px 0;
+}
+
+.foto-nosotros img {
+  width: 100%;
+  display: block;
+}
+
+/* ACTIVIDADES */
+
+#actividades img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  padding: 40px;
+}
+h3 {
+  color: var(--color-lila-claro);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+h3:hover {
+  color: var(--color-lila);
+}
+#actividades {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#actividades article {
+  text-align: center;
+  padding: 10px;
+  width: 30%;
+}
+.article-line {
+  margin-top: -100px;
+  border: 2px solid var(--color-lila-claro);
+  padding: 72px 18px 18px;
+  position: relative;
+}
+
+#actividades article p {
+  border-top: 2px solid var(--color-lila-claro);
+  text-align: start;
+  width: 100%;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  border-top: 2px solid var(--color-lila);
+  background-color: var(--color-lila-claro);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+footer p {
+  color: var(--color-gris);
+  font-size: 18px;
+}
+footer p a {
+  color: var(--color-gris);
+  list-style: none;
+  text-decoration: none;
+}
+footer p small {
+  color: var(--color-lila);
+  font-size: 18px;
 }
